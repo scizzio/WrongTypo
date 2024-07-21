@@ -1,35 +1,52 @@
-.container {
+/* Center the entire container on the page */
+body {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Optional: Set a background color for better contrast */
 }
 
+/* Container holds both the grid and the mini-grid */
+.container {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+}
 
+/* Style for the grid */
 .grid {
   width: 200px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
   background-color: yellow;
+  margin-right: 20px; /* Add space between the grid and mini-grid */
 }
 
+/* Style for the grid cells */
 .grid div {
   height: 20px;
   width: 20px;
 }
 
+/* Tetromino color */
 .tetromino {
   background-color: blue;
 }
 
-
+/* Style for the mini-grid */
 .mini-grid {
-  margin-left: 50px;
   width: 80px;
   height: 80px;
   display: flex;
   flex-wrap: wrap;
   background-color: yellow;
+  align-items: stretch; /* Center items vertically */
+  justify-content: stretch; /* Center items horizontally */
 }
 
+/* Style for the mini-grid cells */
 .mini-grid div {
   height: 20px;
   width: 20px;
